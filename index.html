@@ -232,6 +232,291 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/03/初识shell/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/03/初识shell/" itemprop="url">初识shell</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-03T22:33:06+08:00">
+                2019-09-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="SHELL"><a href="#SHELL" class="headerlink" title="SHELL"></a>SHELL</h3><h3 id="一、认识shell"><a href="#一、认识shell" class="headerlink" title="一、认识shell"></a>一、认识shell</h3><ul>
+<li>什么是shell<ul>
+<li>shell是命令解释器，用于解释用户对操作系统的操作</li>
+<li>shell有很多<ul>
+<li>cat /etc/shells</li>
+</ul>
+</li>
+<li>CentOS7默认使用的shell是bash</li>
+</ul>
+</li>
+<li>linux的启动过程<ul>
+<li>BIOS-&gt;MBR-&gt;BootLoader(grub)-&gt;kernel-&gt;systemd-&gt;系统初始化-&gt;shell</li>
+</ul>
+</li>
+<li>shell脚本的格式<ul>
+<li>unix的哲学：一条命令只做一件事</li>
+<li>为了组合命令和多次运行，使用脚本文件来保存需要执行的命令</li>
+<li>赋予该文件执行权限（chmod u+rx filename）</li>
+</ul>
+</li>
+<li>shell脚本的标准格式需要包含的元素<ul>
+<li>Sha-Bang(#!/bin/bash)</li>
+<li>命令</li>
+<li>“#”开头的注释</li>
+<li>chmod u+rx filename 可执行权限</li>
+<li>执行命令<ul>
+<li>bash ./filename.sh</li>
+<li>./filename.sh</li>
+<li>source ./filename.sh</li>
+<li>.filename.sh</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>脚本不同执行方式的影响</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/01/Java内存模型（JMM）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/01/Java内存模型（JMM）/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-01T23:13:11+08:00">
+                2019-09-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Java内存模型（JMM）"><a href="#Java内存模型（JMM）" class="headerlink" title="Java内存模型（JMM）"></a>Java内存模型（JMM）</h3><ul>
+<li>注意 java内存模型 ≠ jvm内存模型</li>
+</ul>
+<p><img src="C:%5CUsers%5Czjajx%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567345954929.png" alt="1567345954929"></p>
+<ul>
+<li>原子操作</li>
+</ul>
+<p><img src="C:%5CUsers%5Czjajx%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567346258703.png" alt="1567346258703"></p>
+<p><img src="C:%5CUsers%5Czjajx%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567347013322.png" alt="1567347013322"></p>
+<p><img src="C:%5CUsers%5Czjajx%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567347684366.png" alt="1567347684366"></p>
+<h4 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h4><p><img src="C:%5CUsers%5Czjajx%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567347854658.png" alt="1567347854658"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/15/第十章-内部类/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -648,7 +933,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -661,7 +946,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
