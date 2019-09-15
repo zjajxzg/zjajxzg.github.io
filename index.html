@@ -232,6 +232,859 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/15/java面试准备/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/15/java面试准备/" itemprop="url">java面试准备</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-15T22:40:20+08:00">
+                2019-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="面试准备"><a href="#面试准备" class="headerlink" title="面试准备"></a>面试准备</h3><h4 id="一、计算机网络相关"><a href="#一、计算机网络相关" class="headerlink" title="一、计算机网络相关"></a>一、计算机网络相关</h4><ul>
+<li>OSI七层模型（概念）<ul>
+<li>物理层</li>
+<li>数据链路层</li>
+<li>网络层<ul>
+<li>IP协议</li>
+</ul>
+</li>
+<li>传输层<ul>
+<li>TCP协议</li>
+<li>UDP协议</li>
+</ul>
+</li>
+<li>会话层</li>
+<li>表示层</li>
+<li>应用层</li>
+</ul>
+</li>
+<li>TCP/IP概念层模型（4层）<ul>
+<li>应用层</li>
+<li>传输层</li>
+<li>网络层</li>
+<li>链路层</li>
+</ul>
+</li>
+<li>TCP（传输控制协议）三次握手<ul>
+<li>面向</li>
+</ul>
+</li>
+</ul>
+<h4 id="二、数据库"><a href="#二、数据库" class="headerlink" title="二、数据库"></a>二、数据库</h4><h5 id="主要考点"><a href="#主要考点" class="headerlink" title="主要考点"></a>主要考点</h5><p>设计一个关系型数据库</p>
+<ul>
+<li>存储数据（类似文件系统）  机械硬盘  SSD</li>
+<li>程序实例 <ul>
+<li>存储管理</li>
+<li>缓存机制</li>
+<li>SQL解析</li>
+<li>日志管理</li>
+<li>权限划分</li>
+<li>容灾机制</li>
+<li>索引管理</li>
+<li>锁管理</li>
+</ul>
+</li>
+<li>架构</li>
+<li>索引<ul>
+<li>为什么要使用索引？<ul>
+<li>快速查询数据</li>
+</ul>
+</li>
+<li>什么样的信息能成为索引？<ul>
+<li>主键</li>
+<li>唯一键</li>
+<li>普通键</li>
+</ul>
+</li>
+<li>索引的数据结构<ul>
+<li>生成索引，建立二叉查找树进行二分查找<ul>
+<li>O（logn）</li>
+<li>缺点 每个节点的容量太小  io瓶颈</li>
+</ul>
+</li>
+<li>B-Tree<ul>
+<li>定义<ul>
+<li>根节点至少包括两个孩子</li>
+<li>树中每个节点最多包含m个孩子</li>
+<li>除根节点和叶节点外，其他每个节点至少有ceil(m/2)个孩子</li>
+<li>所有叶子节点都位于同一层</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>B+-Tree</li>
+<li>Hash</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>锁</li>
+<li>语法</li>
+<li>理论范式</li>
+</ul>
+<h3 id="五、Java底层知识"><a href="#五、Java底层知识" class="headerlink" title="五、Java底层知识"></a>五、Java底层知识</h3><ul>
+<li>谈谈你对Java的理解<ul>
+<li>平台无关性（一次编译 到处运行）<ul>
+<li>Java源码先被编译成字节码（.java -&gt; javac -&gt; .class），再由不同平台的JVM进行解析，Java在不同平台上运行时不需要重新进行编译，Java虚拟机在执行字节码的时候，把字节码转换成具体平台上的机器指令</li>
+<li>为什么要先编译成字节码再解析成机器码？<ul>
+<li>准备工作：每次执行都需要各种检查</li>
+<li>兼容性：也可以将别的语言解析成字节码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>GC</li>
+<li>语言特性</li>
+<li>面向对象</li>
+<li>类库</li>
+<li>异常处理</li>
+</ul>
+</li>
+</ul>
+<h3 id="七、Java线程知识"><a href="#七、Java线程知识" class="headerlink" title="七、Java线程知识"></a>七、Java线程知识</h3><ul>
+<li>进程和线程的区别</li>
+<li>Java进程和线程的关系<ul>
+<li>Java对操作系统提供的功能进行封装，包括进程和线程</li>
+<li>运行一个程序会产生一个进程，进程包含至少一个线程</li>
+<li>每个进程对应一个Jvm实例，多个线程共享JVM里的堆</li>
+<li>Java采用单线程编程模型，程序会自动创建主线程</li>
+<li>主线程可以创建子线程，原则上要后于子线程完成执行</li>
+</ul>
+</li>
+<li>thread中start和run方法的区别<ul>
+<li>start()会创建一个新的子线程并启动</li>
+<li>run方法只是Thread的一个普通方法的调用</li>
+</ul>
+</li>
+<li>Thread和Runnable的关系<ul>
+<li>Thread是实现了Runnable接口的类，使得run支持多线程</li>
+<li>因类的单一继承原则，推荐多使用Runnable接口</li>
+</ul>
+</li>
+<li>如何给run()传参<ul>
+<li>构造函数传参</li>
+<li>成员变量传参</li>
+<li>回调函数传参</li>
+</ul>
+</li>
+<li>如何处理线程的返回值<ul>
+<li>主线程等待法</li>
+<li>使用Thread的join()阻塞当前线程以等待子线程处理完毕</li>
+<li>通过Callable接口实现：通过FutureTask(isDone() get()) or 线程池获取</li>
+</ul>
+</li>
+<li>线程的状态<ul>
+<li>NEW  新建 创建后尚未启动的线程的状态</li>
+<li>Runnale 饱和Running和Ready</li>
+<li>WAITING 无线期等待 不会被分配CPU执行时间 需要显示被唤醒 <ul>
+<li>没有设置Timeout参数的Object.wait()方法</li>
+<li>没有设置Timeout参数的Thread.join()方法</li>
+<li>LockSupport.park()方法</li>
+</ul>
+</li>
+<li>Timed waiting  限期等待 在 一定时间后会由系统自动唤醒<ul>
+<li>Thread.sleep()方法</li>
+<li>设置了Timeout参数的Object.wait()方法</li>
+<li>设置了Timeout参数的Thread.join()方法</li>
+<li>LockSupport.parkNanos()方法</li>
+<li>LockSupport.parkUntil()方法</li>
+</ul>
+</li>
+<li>Blocked 阻塞 等待获取排他锁</li>
+<li>Terminated 结束状态 已终止线程的状态 线程已经执行结束</li>
+</ul>
+</li>
+<li>sleep()和wait()的区别<ul>
+<li>sleep是Thread类的方法    wait 是Object类中定义的方法   都是native方法</li>
+<li>sleep方法可以在任何地方使用</li>
+<li>wait只能在synchronized方法或者synchronized块中使用</li>
+<li>本质区别 sleep只会让出cpu 不会导致锁行为的改变 wait不仅会让出cpu 还会释放已经占有的同步资源锁</li>
+</ul>
+</li>
+<li>notify()和notifyall()的区别<ul>
+<li>锁池    等待锁释放的线程</li>
+<li>等待池 wait 释放锁    不会去竞争锁  </li>
+<li>notifyAll会让所有属于等待池的线程全部进入锁池去竞争获取锁的机会</li>
+<li>notify随机选取一个处于等待池中的线程进入锁池去竞争获取锁的机会</li>
+</ul>
+</li>
+<li>yield()<ul>
+<li>当调用yield()函数时，会给线程调度器一个当前线程愿意让出CPU使用的暗示，但是线程调度器可能会忽略这个暗示    不会让线程让出锁</li>
+</ul>
+</li>
+<li>interrupt()<ul>
+<li>stop() 中断线程   已抛弃</li>
+<li>通知线程应该中断了<ul>
+<li>如果线程处于被阻塞状态 那么线程将立即退出被阻塞状态 并抛出一个InterruptedException</li>
+<li>如果线程处于正常活动状态 那么会将该线程的中断标志设置为true 被设置中断标志的线程将继续正常运行 不受影响</li>
+</ul>
+</li>
+<li>需要被调用的线程配合中断<ul>
+<li>在正常运行任务时，经常检查本线程中断标志位，如果被设置了中断标志 就自行停止线程</li>
+<li>如果线程处于正常活动状态，那么会将该线程的中断标志设置为true</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>线程状态以及状态之间的转换（补张图）</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/10/Java的IO机制/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/10/Java的IO机制/" itemprop="url">Java的IO机制</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T23:22:03+08:00">
+                2019-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="BIO、NIO、-AIO"><a href="#BIO、NIO、-AIO" class="headerlink" title="BIO、NIO、 AIO"></a>BIO、NIO、 AIO</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/10/J-U-C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/10/J-U-C/" itemprop="url">J.U.C</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T23:05:06+08:00">
+                2019-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="J-U-C（java-util-concurrent）"><a href="#J-U-C（java-util-concurrent）" class="headerlink" title="J.U.C（java.util.concurrent）"></a>J.U.C（java.util.concurrent）</h3><ul>
+<li>CAS</li>
+<li>AQS</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/HashMap/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/08/HashMap/" itemprop="url">HashMap</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-08T23:26:34+08:00">
+                2019-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><ul>
+<li>HashMap（非线程安全）<ul>
+<li>Java8以前<ul>
+<li>数组+链表实现 （默认数组长度为16）最坏情况O(1)-&gt;O(n)</li>
+</ul>
+</li>
+<li>Java8以后<ul>
+<li>数组+链表+红黑树 O(lgn)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>源码分析<ul>
+<li>成员变量<ul>
+<li>数据结构，树化阈值</li>
+</ul>
+</li>
+<li>构造函数<ul>
+<li>延迟创建</li>
+</ul>
+</li>
+<li>put方法<ul>
+<li>hashmap未被初始化 则初始化（延迟加载）</li>
+<li>对key求hash值</li>
+</ul>
+</li>
+<li>get方法 </li>
+<li>hash方法<ul>
+<li>hashCode()</li>
+</ul>
+</li>
+<li>resize()<ul>
+<li>默认负载因子0.75  </li>
+<li>扩容的问题<ul>
+<li>多线程环境下， 调整大小会存在条件竞争，容易出现死锁</li>
+<li>rehashing比较耗时</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如何有效减少碰撞<ul>
+<li>扰动函数</li>
+<li>使用final对象</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/Java集合框架/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/08/Java集合框架/" itemprop="url">Java集合框架</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-08T23:24:58+08:00">
+                2019-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Java集合框架"><a href="#Java集合框架" class="headerlink" title="Java集合框架"></a>Java集合框架</h3><ul>
+<li>List<ul>
+<li>ArrayList（非线程安全）<pre><code>- 数组实现
+- grow()实现动态扩容</code></pre></li>
+<li>Vector（线程安全）<pre><code>- 数组实现</code></pre></li>
+<li>LinkedList（非线程安全）<pre><code>- 链表实现</code></pre></li>
+</ul>
+</li>
+<li>Set<ul>
+<li>HashSet<pre><code>- HashMap实现</code></pre><ul>
+<li>TreeSet</li>
+<li>TreeMap实现</li>
+<li>排序（equals   hashcode  compareto）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/Java异常/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -906,144 +1759,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/12/2019下半年计划/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zjajxzg">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="zjajxzg's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/12/2019下半年计划/" itemprop="url">2019下半年计划</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-12T21:59:53+08:00">
-                2019-08-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="长期计划"><a href="#长期计划" class="headerlink" title="长期计划"></a>长期计划</h3><ul>
-<li>开始写博客，目前想的主要内容包括对java的学习计划与学习进度，简单的总结，当然博客完全可以不限于技术上的东西，生活、爱好、也可以是日记等等，总的来说写博客的目的是为了督促自己，记得两年前可能就有这个想法了，一直没有执行，还记得博客园甚至写了个开头的感想就没了，惭愧，这次希望自己能够坚持下去吧，不在乎有没有人看，主要还是写给自己的。</li>
-</ul>
-<h3 id="八月"><a href="#八月" class="headerlink" title="八月"></a>八月</h3><h5 id="JAVA基础"><a href="#JAVA基础" class="headerlink" title="JAVA基础"></a>JAVA基础</h5><ol>
-<li>《深入理解Java虚拟机》</li>
-<li>《Java编程思想第四版》<ul>
-<li>第十章《内部类》</li>
-<li>第十二章《异常》</li>
-<li>第十五章《泛型》</li>
-</ul>
-</li>
-</ol>
-<h5 id="数据结构与算法"><a href="#数据结构与算法" class="headerlink" title="数据结构与算法"></a>数据结构与算法</h5><ol>
-<li>leetcode  hot100  每周周赛</li>
-<li>慕课视频《玩转数据结构》、《玩转算法面试》</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1087,7 +1809,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
