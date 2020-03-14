@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="redis,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="want to be better!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zjajxzg&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta name="description" content="《redis设计与实现》第一部分-数据结构与对象一、简单动态字符串（SDS）12345678910struct sdshde &amp;#123;	// 记录buf数组中已经使用字节的数量    // 等于SDS所保存字符串的长度    int len;    // 记录buf数组中未使用字节的数量    int free;    // 字节数组，用于保存字符串    char buf[];&amp;#125;">
+<meta name="keywords" content="redis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="redis设计与实现">
+<meta property="og:url" content="http://yoursite.com/2020/03/14/redis设计与实现/index.html">
 <meta property="og:site_name" content="zjajxzg&#39;s blog">
-<meta property="og:description" content="want to be better!">
+<meta property="og:description" content="《redis设计与实现》第一部分-数据结构与对象一、简单动态字符串（SDS）12345678910struct sdshde &amp;#123;	// 记录buf数组中已经使用字节的数量    // 等于SDS所保存字符串的长度    int len;    // 记录buf数组中未使用字节的数量    int free;    // 字节数组，用于保存字符串    char buf[];&amp;#125;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-03-14T10:11:59.359Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zjajxzg&#39;s blog">
-<meta name="twitter:description" content="want to be better!">
+<meta name="twitter:title" content="redis设计与实现">
+<meta name="twitter:description" content="《redis设计与实现》第一部分-数据结构与对象一、简单动态字符串（SDS）12345678910struct sdshde &amp;#123;	// 记录buf数组中已经使用字节的数量    // 等于SDS所保存字符串的长度    int len;    // 记录buf数组中未使用字节的数量    int free;    // 字节数组，用于保存字符串    char buf[];&amp;#125;">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/2/">
+  <link rel="canonical" href="http://yoursite.com/2020/03/14/redis设计与实现/">
 
 
 
 
 
-  <title>zjajxzg's blog</title>
+  <title>redis设计与实现 | zjajxzg's blog</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -232,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/12/《深入理解java虚拟机》整理/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/14/redis设计与实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zjajxzg">
@@ -249,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/12/《深入理解java虚拟机》整理/" itemprop="url">《深入理解Java虚拟机》整理</a></h1>
+          <h1 class="post-title" itemprop="name headline">redis设计与实现</h1>
         
 
         <div class="post-meta">
@@ -263,8 +262,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-12T22:23:30+08:00">
-                2019-08-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-14T18:11:21+08:00">
+                2020-03-14
               </time>
             
 
@@ -301,21 +300,26 @@
       
 
       
-        
-          
-            <h3 id="第二章-内存区域与内存溢出"><a href="#第二章-内存区域与内存溢出" class="headerlink" title="第二章-内存区域与内存溢出"></a>第二章-内存区域与内存溢出</h3><ul>
-<li>运行时数据区域<ol>
-<li>程序计数器</li>
-<li>Java虚拟机栈</li>
-<li>本地方法栈</li>
-<li>堆</li>
-<li>方法区</li>
-</ol>
+        <h3 id="《redis设计与实现》"><a href="#《redis设计与实现》" class="headerlink" title="《redis设计与实现》"></a>《redis设计与实现》</h3><h4 id="第一部分-数据结构与对象"><a href="#第一部分-数据结构与对象" class="headerlink" title="第一部分-数据结构与对象"></a>第一部分-数据结构与对象</h4><h5 id="一、简单动态字符串（SDS）"><a href="#一、简单动态字符串（SDS）" class="headerlink" title="一、简单动态字符串（SDS）"></a>一、简单动态字符串（SDS）</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">sdshde</span> &#123;</span></span><br><span class="line">	<span class="comment">// 记录buf数组中已经使用字节的数量</span></span><br><span class="line">    <span class="comment">// 等于SDS所保存字符串的长度</span></span><br><span class="line">    <span class="keyword">int</span> len;</span><br><span class="line">    <span class="comment">// 记录buf数组中未使用字节的数量</span></span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">free</span>;</span><br><span class="line">    <span class="comment">// 字节数组，用于保存字符串</span></span><br><span class="line">    <span class="keyword">char</span> buf[];</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>相比与C字符串的优势：</p>
+<ul>
+<li><p>常数复杂度获取字符串长度</p>
+</li>
+<li><p>杜绝缓冲区溢出</p>
+</li>
+<li><p>减少修改字符串时带来的内存重分配次数</p>
+<ul>
+<li>空间预分配（len小于1m: free=len，len&gt;1m: free=1m）</li>
+<li>惰性空间释放</li>
+</ul>
+</li>
+<li><p>二进制安全（使用len来判断字符串结束，而不是结尾的空字符串）</p>
+</li>
+<li><p>兼容部分C字符串函数</p>
 </li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -330,149 +334,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/12/2019下半年计划/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zjajxzg">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="zjajxzg's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/12/2019下半年计划/" itemprop="url">2019下半年计划</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-12T21:59:53+08:00">
-                2019-08-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/redis/" rel="tag"># redis</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="长期计划"><a href="#长期计划" class="headerlink" title="长期计划"></a>长期计划</h3><ul>
-<li>开始写博客，目前想的主要内容包括对java的学习计划与学习进度，简单的总结，当然博客完全可以不限于技术上的东西，生活、爱好、也可以是日记等等，总的来说写博客的目的是为了督促自己，记得两年前可能就有这个想法了，一直没有执行，还记得博客园甚至写了个开头的感想就没了，惭愧，这次希望自己能够坚持下去吧，不在乎有没有人看，主要还是写给自己的。</li>
-</ul>
-<h3 id="八月"><a href="#八月" class="headerlink" title="八月"></a>八月</h3><h5 id="JAVA基础"><a href="#JAVA基础" class="headerlink" title="JAVA基础"></a>JAVA基础</h5><ol>
-<li>《深入理解Java虚拟机》</li>
-<li>《Java编程思想第四版》<ul>
-<li>第十章《内部类》</li>
-<li>第十二章《异常》</li>
-<li>第十五章《泛型》</li>
-</ul>
-</li>
-</ol>
-<h5 id="数据结构与算法"><a href="#数据结构与算法" class="headerlink" title="数据结构与算法"></a>数据结构与算法</h5><ol>
-<li>leetcode  hot100  每周周赛</li>
-<li>慕课视频《玩转数据结构》、《玩转算法面试》</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/15/java面试准备/" rel="next" title="java面试准备">
+                <i class="fa fa-chevron-left"></i> java面试准备
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -482,14 +373,37 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
 
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -497,6 +411,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -517,8 +435,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -585,6 +512,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#《redis设计与实现》"><span class="nav-number">1.</span> <span class="nav-text">《redis设计与实现》</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一部分-数据结构与对象"><span class="nav-number">1.1.</span> <span class="nav-text">第一部分-数据结构与对象</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一、简单动态字符串（SDS）"><span class="nav-number">1.1.1.</span> <span class="nav-text">一、简单动态字符串（SDS）</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -725,6 +668,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
