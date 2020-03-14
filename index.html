@@ -450,6 +450,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/面试/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -940,6 +962,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -1036,7 +1080,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/10/J-U-C/" itemprop="url">J.U.C</a></h1>
+                <a class="post-title-link" href="/2019/09/10/J-U-C/" itemprop="url">JUC</a></h1>
         
 
         <div class="post-meta">
@@ -1058,6 +1102,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1091,173 +1157,6 @@
             <h3 id="J-U-C（java-util-concurrent）"><a href="#J-U-C（java-util-concurrent）" class="headerlink" title="J.U.C（java.util.concurrent）"></a>J.U.C（java.util.concurrent）</h3><ul>
 <li>CAS</li>
 <li>AQS</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/HashMap/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zjajxzg">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="zjajxzg's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/08/HashMap/" itemprop="url">HashMap</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-08T23:26:34+08:00">
-                2019-09-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><ul>
-<li>HashMap（非线程安全）<ul>
-<li>Java8以前<ul>
-<li>数组+链表实现 （默认数组长度为16）最坏情况O(1)-&gt;O(n)</li>
-</ul>
-</li>
-<li>Java8以后<ul>
-<li>数组+链表+红黑树 O(lgn)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>源码分析<ul>
-<li>成员变量<ul>
-<li>数据结构，树化阈值</li>
-</ul>
-</li>
-<li>构造函数<ul>
-<li>延迟创建</li>
-</ul>
-</li>
-<li>put方法<ul>
-<li>hashmap未被初始化 则初始化（延迟加载）</li>
-<li>对key求hash值</li>
-</ul>
-</li>
-<li>get方法 </li>
-<li>hash方法<ul>
-<li>hashCode()</li>
-</ul>
-</li>
-<li>resize()<ul>
-<li>默认负载因子0.75  </li>
-<li>扩容的问题<ul>
-<li>多线程环境下， 调整大小会存在条件竞争，容易出现死锁</li>
-<li>rehashing比较耗时</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>如何有效减少碰撞<ul>
-<li>扰动函数</li>
-<li>使用final对象</li>
-</ul>
-</li>
 </ul>
 
           
@@ -1348,6 +1247,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1537,9 +1458,9 @@
       
         
           
-            <h3 id="每日一题之Java异常"><a href="#每日一题之Java异常" class="headerlink" title="每日一题之Java异常"></a>每日一题之Java异常</h3><ul>
+            <h3 id="Java异常"><a href="#Java异常" class="headerlink" title="Java异常"></a>Java异常</h3><ul>
 <li><p>Java异常层次结构图</p>
-<p><img src="G:%5Cgithub_hexo_blog%5Cblog%5Csource_posts%5C1354020417_5176.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/zjajxzg/figure_bed_public/master/github_img/1354020417_5176.jpg" alt></p>
 </li>
 <li><p>由图可以看出在Java中所有异常均继承自Throwable（可以抛出），Throawble下有两个重要的子类，Exception和Error</p>
 </li>
@@ -1662,6 +1583,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -1775,6 +1718,250 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/02/Java方法-函数总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjajxzg">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zjajxzg's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/02/Java方法-函数总结/" itemprop="url">Java方法总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T21:49:51+08:00">
+                2019-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><h4 id="题外话–方法和函数"><a href="#题外话–方法和函数" class="headerlink" title="题外话–方法和函数"></a>题外话–方法和函数</h4><ul>
+<li>之前没有想过方法和函数有什么区别，一直都是当一个概念处理，有时候顺口就叫方法，有时候顺口就叫函数，工作中也没人会强调，大家也都默许着方法=函数，直到今天要做这个总结的时候，才想到查一查这两者到底有什么区别。从英文的角度来说方法应该是method，函数是function，看到这两个单词我第一时间想到的就是Java和JavaScript，在看Java的相关文档时就会发现文档中应该只有method这个单词，而Js中则只会有function，再仔细回想一下，method只出现在面向对象的语言中，而function则只出现在面向过程的语言的中，对象的方法，对象的函数，好像听起来前者也比较合适哈哈（只能说咬文嚼字还是有一点点意思在里面的），函数给人的感觉就是数学里的概念，比较生硬，方法则比较灵活，和对象这个概念比较契合。（说了一大堆没用的，总结一下其实函数就是方法。。）</li>
+</ul>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><h4 id="Java中的方法"><a href="#Java中的方法" class="headerlink" title="Java中的方法"></a>Java中的方法</h4><ul>
+<li><p>基本组成</p>
+<ul>
+<li><p>修饰符</p>
+<table>
+<thead>
+<tr>
+<th>访问修饰符\作用域</th>
+<th>同一个类中</th>
+<th>同一个包中</th>
+<th>子类中</th>
+<th>任何地方</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public</td>
+<td>可以</td>
+<td>可以</td>
+<td>可以</td>
+<td>可以</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>可以</td>
+<td>可以</td>
+<td>可以</td>
+<td>不可以</td>
+</tr>
+<tr>
+<td>默认修饰符</td>
+<td>可以</td>
+<td>可以</td>
+<td>不可以</td>
+<td>不可以</td>
+</tr>
+<tr>
+<td>private</td>
+<td>可以</td>
+<td>不可以</td>
+<td>不可以</td>
+<td>不可以</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>返回值</p>
+</li>
+<li><p>方法名称</p>
+</li>
+<li><p>参数列表</p>
+</li>
+<li><p>方法体</p>
+</li>
+<li><p>其中方法名+参数列表称为方法签名，唯一的标识出了某个方法</p>
+</li>
+</ul>
+</li>
+<li><p>Java中的方法只能作为类的一部分来创建</p>
+</li>
+<li><p>方法的重载（出现在同一个类中）</p>
+<ul>
+<li>被重载的方法必须改变参数列表(参数个数或类型不一样)</li>
+<li>被重载的方法可以改变返回类型</li>
+<li>被重载的方法可以改变访问修饰符</li>
+<li>被重载的方法可以声明新的或更广的检查异常</li>
+<li>方法能够在同一个类中或者在一个子类中被重载</li>
+<li>无法以返回值类型作为重载函数的区分标准</li>
+</ul>
+</li>
+<li><p>方法重写（出现在父子继承类当中）</p>
+<ul>
+<li>参数列表必须完全与被重写方法的相同</li>
+<li>返回类型与被重写方法的返回类型可以不相同，但是必须是父类返回值的派生类（java5 及更早版本返回类型要一样，java7 及更高版本可以不同）</li>
+<li>访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为 public，那么在子类中重写该方法就不能声明为 protected</li>
+<li>父类的成员方法只能被它的子类重写</li>
+<li>声明为 final 的方法不能被重写</li>
+<li>声明为 static 的方法不能被重写，但是能够被再次声明</li>
+<li>子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为 private 和 final 的方法</li>
+<li>子类和父类不在同一个包中，那么子类只能够重写父类的声明为 public 和 protected 的非 final 方法</li>
+<li>重写的方法能够抛出任何非强制异常，无论被重写的方法是否抛出异常。但是，重写的方法不能抛出新的强制性异常，或者比被重写方法声明的更广泛的强制性异常，反之则可以</li>
+<li>构造方法不能被重写</li>
+<li>如果不能继承一个方法，则不能重写这个方法</li>
+</ul>
+</li>
+<li><p>静态方法（static）</p>
+<ul>
+<li>类方法  可以通过类名.直接调用，无需创建对象</li>
+<li>静态方法可以直接调用类中的静态成员，不能直接调用非静态成员，也不能直接调用非静态方法</li>
+</ul>
+</li>
+<li><p>抽象方法（abstract）</p>
+<ul>
+<li>没有方法体</li>
+</ul>
+</li>
+<li><p>泛型方法（<t>）</t></p>
+<ul>
+<li>只有声明了<t>的方法才是泛型方法，泛型类中的使用了泛型的成员方法并不是泛型方法</t></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/15/第十章-内部类/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1794,7 +1981,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/15/第十章-内部类/" itemprop="url">《Java编程思想-第四版》第十章-内部类</a></h1>
+                <a class="post-title-link" href="/2019/08/15/第十章-内部类/" itemprop="url">Java编程思想-第四版第十章-内部类</a></h1>
         
 
         <div class="post-meta">
@@ -1816,6 +2003,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1913,7 +2122,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/12/《深入理解java虚拟机》整理/" itemprop="url">《深入理解Java虚拟机》整理</a></h1>
+                <a class="post-title-link" href="/2019/08/12/《深入理解java虚拟机》整理/" itemprop="url">深入理解Java虚拟机整理</a></h1>
         
 
         <div class="post-meta">
@@ -1935,6 +2144,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1964,19 +2195,14 @@
 
       
         
-          
-            <h3 id="第二章-内存区域与内存溢出"><a href="#第二章-内存区域与内存溢出" class="headerlink" title="第二章-内存区域与内存溢出"></a>第二章-内存区域与内存溢出</h3><ul>
-<li>运行时数据区域<ol>
-<li>程序计数器</li>
-<li>Java虚拟机栈</li>
-<li>本地方法栈</li>
-<li>堆</li>
-<li>方法区</li>
-</ol>
-</li>
-</ul>
-
-          
+          第二章-内存区域与内存溢出
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/12/《深入理解java虚拟机》整理/">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2013,10 +2239,6 @@
   </section>
 
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
 
 
           </div>
@@ -2060,7 +2282,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2071,7 +2293,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2082,7 +2304,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
