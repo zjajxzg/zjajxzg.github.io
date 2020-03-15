@@ -3,6 +3,7 @@ title: 初识shell
 date: 2019-09-03 22:33:06
 tags: linux
 categories: linux
+discription: shell
 ---
 
 ### SHELL
