@@ -12,17 +12,17 @@ discription: java集合框架整理
     - ArrayList（非线程安全）
       	
       	- 数组实现
-      	
-      	<!-- more -->
-    
-      	- grow()实现动态扩容
+       
+        	- grow()实现动态扩容
+
     - Vector（线程安全）
-      	- 数组实现
-    - LinkedList（非线程安全）
-      	- 链表实现
- - Set
-    - HashSet
-      	- HashMap实现
-   - TreeSet
-     - TreeMap实现
-     - 排序（equals   hashcode  compareto）
+        - 数组实现
+        - LinkedList（非线程安全）
+        - 链表实现
+
+     - Set
+        - HashSet
+            - HashMap实现
+       - TreeSet
+         - TreeMap实现
+         - 排序（equals   hashcode  compareto）

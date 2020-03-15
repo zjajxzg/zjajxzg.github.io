@@ -83,3 +83,10 @@ deploy:
   type: git
   repo: https://github_token@github.com/zjajxzg/zjajxzg.github.io
 branch: master
+
+
+search:
+      path: search.xml
+      field: post
+      format: html
+      limit: 10000
