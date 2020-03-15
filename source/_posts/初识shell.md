@@ -15,7 +15,10 @@ discription: shell
   - shell有很多
     - cat /etc/shells
   - CentOS7默认使用的shell是bash
+  
+  <!-- more -->
 - linux的启动过程
+  
   - BIOS->MBR->BootLoader(grub)->kernel->systemd->系统初始化->shell
 - shell脚本的格式
   - unix的哲学：一条命令只做一件事

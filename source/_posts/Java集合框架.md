@@ -10,7 +10,11 @@ discription: java集合框架整理
 
  - List
     - ArrayList（非线程安全）
+      	
       	- 数组实现
+      	
+      	<!-- more -->
+    
       	- grow()实现动态扩容
     - Vector（线程安全）
       	- 数组实现
