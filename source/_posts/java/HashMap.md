@@ -2,11 +2,8 @@
 title: HashMap
 date: 2019-09-08 23:26:34
 tags: Java面试
-categories：java
-description: HashMap
+categories: java
 ---
-
-### HashMap
 
 - HashMap（非线程安全）
   - Java8以前
