@@ -10,6 +10,8 @@ discription: java集合框架整理
 
 > ArrayList是一个以数组实现的List，可以简单的理解为一个动态数组，相比于数组可以动态扩容。
 
+<!-- more -->
+
 #### 类图
 
 ![](https://raw.githubusercontent.com/zjajxzg/figure_bed_public/master/github_img/arraylist_uml.png)
@@ -173,3 +175,7 @@ private static int hugeCapacity(int minCapacity) {
 
 
 - 待续。。。
+
+##### 参考
+
+https://mp.weixin.qq.com/s?__biz=Mzg2ODA0ODM0Nw==&mid=2247483693&idx=2&sn=bca760bdedbb488a51647db293305e17&scene=21#wechat_redirect
